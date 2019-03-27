@@ -23,18 +23,31 @@ html, body {
     font-size: 16px;
 }
 
-/*********************************************************************
-  YOUR TABLET/DESKTOP STYLES GO HERE
-*********************************************************************/
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here.
-    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
-/*********************************************************************
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+
+    /*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+    @media(min-width: 681px) {
+        /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    }
+
+    /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here.
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
-}
+    }
